@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="project/images/logo.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="plugin/bootstrap-css/bootstrap.min.css" />
+    <link rel="stylesheet" href="plugin/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="plugin/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="project/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
+    <link href="plugin/DataTables/media/css/jquery.dataTables.min.css" rel="stylesheet">
+    <title>Koru UX Design</title>
+</head>
+
+<body>
+    <header></header>
+    <div class="container-fluid">
+        <!--Landing page-->
+        <div class="aboutSection">
+            <div class="container">
+                <div class="row align-center">
+                    <div class="col-xl-12 col-md-12 col-lg-12">
+                        <h4 class="secondSectionTitle">Koru Ux Design.</h4>
+                        <h6>Software company. </h6>
+                        <p class="secondSectionInfo">Koru UX Design is an award-winning enterprise User Experience design company focused on creating a positive, powerful, and pleasurable impact</p>
+                        <button type="button" class="btnReadMore" data-toggle="modal" data-target="#modalViewAlerts">View Alerts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Alert modal-->
+    <div class="modal fade" id="modalViewAlerts" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-header-orange">
+                    <button type="button" class="btn-circle-xxs pull-right" data-dismiss="modal" aria-hidden="true" id="closeModal">× </button>
+                    <h4 class="modal-title txt-color-white">Alerts</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div id="exTab2">
+                        <ul class="nav nav-tabs" id="tabMenu">
+                            <li class="active">
+                                <a href="#immunisationAlerts" data-toggle="tab">Immunisation Alerts</a>
+                            </li>
+                            <li><a href="#labAlerts" data-toggle="tab">Lab Alerts</a>
+                            </li>
+                            <li><a href="#diAlerts" data-toggle="tab">DI Alerts</a>
+                            </li>
+                            <li><a href="#procedureAlerts" data-toggle="tab">Procedure Alerts</a>
+                            </li>
+                            <li><a href="#rxSpecificAlerts" data-toggle="tab">RX Specific Alerts</a>
+                            </li>
+                            <li><a href="#dxSpecificAlerts" data-toggle="tab">DX Specific Alerts</a>
+                            </li>
+                            <li><a href="#patientSpecificAlerts" data-toggle="tab">Patient Specific Alerts</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="immunisationAlerts">
+                                <div class="row">
+                                    <div class="col-md-5 col-md-push-7 formDiv">
+                                        <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off" id="formAlerts">
+                                            <div class="col-md-12">
+                                                <label>Name</label>
+                                                <input type="text" name="userName" id="userName" onkeypress='return onlyAlphabets(event,this);' style="width: 100%" required><br>
+                                            </div>
+                                            <div class="col-md-12 formTagDiv">
+                                                <label>Description</label>
+                                                <input type="text" name="description" id="description" onkeypress='return onlyAlphabets(event,this);' style="width: 100%" required> <br>
+                                            </div>
+                                            <div class="col-md-12 formTagDiv">
+                                                <label>Web Ref.</label>
+                                                <input type="text" name="webReference" id="webReference" onkeypress='return onlyAlphabets(event,this);' style="width: 100%" required><br><br>
+                                            </div>
+                                            <div class="col-12 pull-right btn-Submit form-action-buttons">
+                                                <input type="submit" value="Add">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-7 col-md-pull-5 mycontent-right">
+                                        <h6 class="heading"><b>Immunisation Alerts</b></h6>
+                                        <div class="row filterDiv">
+                                            <div class="col-md-9">
+                                                <label>Find</label>
+                                                <input type="text" id="myInput" placeholder="Search for names.." onkeyup="searchData()">
+                                            </div>&nbsp;
+                                            <div class="col-md-1 pull-right btn-Delete">
+                                                <button type="button" id="deleteRecord" onclick="deleteRows()" class="deleteBtn">Delete</button>
+                                            </div>
+                                        </div>
+                                        <!--                                        <div class="table-responsive" style="width: 100%">-->
+                                        <div class="table-responsive" style="width: 100%">
+                                            <table id="tableAlerts" class="table table-bordered table-hover table-condensed">
+                                                <thead>
+                                                    <tr class="bg-tableHead">
+                                                        <th><input type="checkbox" id="thCheckbox" /></th>
+                                                        <th>Name</th>
+                                                        <th>Description</th>
+                                                        <th>WebReference</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="tBody">
+                                                    <!-- populated from the javascript file-->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row element">
+                                        <div class="col-md-2 pull-right divCancel">
+                                            <button type="button" data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btnOk">Ok</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="labAlerts">
+                                <div>
+                                    <h6 class="heading"><b>No Data Available</b></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--    sripts section start here-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="plugin/jquery-validate/jquery.validate.min.js"></script>
+    <script src="plugin/bootstrap-js/bootstrap.min.js"></script>
+    <script src="plugin/bootstrap-js/popper.min.js"></script>
+    <script src="data.json"></script>
+    <script src="plugin/DataTables/js/jquery.js"></script>
+    <script src="plugin/DataTables/media/js/jquery.dataTables.min.js"></script>
+
+    <!--Custom js-->
+    <script src="project/js/index.js"></script>
+    <script src="project/js/filter.js"></script>
+
+</body></html>

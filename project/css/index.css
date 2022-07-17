@@ -1,0 +1,300 @@
+footer.sticky-footer {
+    padding: 4px 0;
+    flex-shrink: 0;
+    border-bottom: 5px solid #5CB85C;
+}
+
+.sticky-footer {
+    padding: 20px 30px 20px 230px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #fff;
+    border-top: 1px solid #e9f1f1;
+    box-shadow: 0 2px 17px 2px rgb(194 186 210 / 20%);
+}
+
+.aboutSection {
+    padding: 50px 0px;
+}
+
+.secondSectionTitle {
+    text-transform: uppercase;
+    color: #5CB85C;
+    font-size: 40px;
+}
+
+.secondSectionInfo {
+    font-size: 15px;
+}
+
+.btnReadMore {
+    background-color: #5CB85C;
+    color: #fff;
+    border: 0px;
+    width: 144px;
+    padding: 8px 10px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#exTab1 .tab-content {
+    color: white;
+    background-color: #428bca;
+    padding: 5px 15px;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+    color: #5CB85C;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 2px 2px 0 0;
+    background-color: #5CB85C;
+    color: #fff;
+    padding: 5px;
+    font-weight: bold;
+
+}
+
+.nav-tabs > li > a:hover {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 2px 2px 0 0;
+    background-color: #5CB85C;
+    color: #fff;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #5CB85C;
+}
+
+.tabMargin {
+    margin-left: 16%;
+}
+
+.modal-dialog {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.bg-tableHead {
+    background-color: #5CB85C;
+    color: #fff;
+}
+
+.heading {
+    color: #5CB85C;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.modal-header {
+    padding: 5px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #5CB85C;
+    color: #fff;
+}
+
+.modal-body {
+    background-color: #F5F5F4;
+}
+
+.modal-header .close {
+    margin-right: 12px;
+    margin-top: 5px;
+
+}
+
+.btn-circle-xxs {
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    padding: 0px 0px;
+    font-size: 11px;
+    line-height: 18px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-color: #5CB85C;
+    background: #5CB85C;
+    border-radius: 94px;
+    border: 1px solid #fff;
+}
+
+.mycontent-right {
+    border-right: 1px dashed #333;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 18px;
+}
+
+.formDiv {
+    padding-top: 23px;
+}
+
+.filterDiv {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn-Delete {
+    margin-right: 40px;
+}
+
+.btn-Submit {
+    margin-right: 18px;
+}
+
+.error {
+    font-size: 10px;
+    color: red;
+    margin-bottom: 0.7vw;
+    text-align: left !important;
+}
+
+/*for total result text*/
+#totalResult {
+    color: black !important;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+/*pagniation code*/
+.pagination {
+    display: inline-block;
+    margin: 0px;
+}
+
+.pagination a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    font-size: 12px;
+
+
+}
+
+.pagination .arrowIcon {
+    border: 1px solid #5CB85C;
+    color: #5CB85C;
+}
+
+.pagination a.active {
+    background-color: #5CB85C;
+    color: white;
+    border: 1px solid #5CB85C;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #fff !important;
+    border: 1px solid #cacaca;
+    background: #5CB85C !important;
+
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    color: #fff !important;
+    border: 1px solid #cacaca;
+    background: #5CB85C !important;
+
+}
+
+.element {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.divCancel {
+    margin-bottom: 16px;
+}
+
+/*for cancel and ok btn*/
+
+.btnOk {
+    background-color: #5CB85C;
+    color: white;
+    border: 1px solid #5CB85C;
+    padding: 2px 13px;
+    border: 1px solid #5CB85C;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.btnOk:hover {
+    background-color: #5CB85C;
+    color: white;
+    border: 1px solid #5CB85C;
+    padding: 2px 13px;
+    border: 1px solid #5CB85C;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.formTagDiv {
+    margin-top: 10px;
+}
+
+
+@media (max-width: 991px) {
+    .modal-dialog {
+        width: 752px;
+    }
+
+    .element {
+        position: relative;
+    }
+
+    .btn-Delete {
+        margin-right: -10px;
+        margin-top: -29px;
+    }
+
+    .mycontent-right {
+        border-right: none;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .modal-dialog {
+        width: 300px;
+    }
+
+    .mycontent-right {
+        border-right: none;
+    }
+
+}
